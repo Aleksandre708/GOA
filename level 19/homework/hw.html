@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Enthusiasts</title>
+    <link rel="stylesheet" href="styles.css">
+    <center>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Travel Enthusiasts</h1>
+        <nav>
+            <ul>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#tips">Travel Tips</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="destinations">
+            <h2>Top Destinations</h2>
+            <article>
+                <h3>Paris</h3>
+                <p><strong>The city of light</strong>, known for its art, culture, and cuisine.</p>
+                <ul>
+                    <li>The Eiffel Tower</li>
+                    <li>Louvre Museum</li>
+                    <li>Notre-Dame Cathedral</li>
+                </ul>
+                <hr>
+            </article>
+
+            <article>
+                <h3>Bali</h3>
+                <p><em>A tropical paradise</em> with stunning beaches and lush landscapes.</p>
+                <ol>
+                    <li>Ubud</li>
+                    <li>Seminyak</li>
+                    <li>Uluwatu Temple</li>
+                </ol>
+                <hr>
+            </article>
+        </section>
+
+        <section id="tips">
+            <h2>Travel Tips</h2>
+            <aside>
+                <p><mark>Note:</mark> Always carry a first-aid kit!</p>
+            </aside>
+            <ul>
+                <li>Pack light</li>
+                <li>Stay hydrated</li>
+                <li>Keep copies of important documents</li>
+            </ul>
+            <hr>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiuchFXN2BogfwTpysqDAwxRid84tw_7fNfQ&s" alt="A stunning mountain" width="200">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiuchFXN2BogfwTpysqDAwxRid84tw_7fNfQ&s" alt="A sunny beach" width="200">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiuchFXN2BogfwTpysqDAwxRid84tw_7fNfQ&s" alt="A historic monument" width="200">
+                <br>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiuchFXN2BogfwTpysqDAwxRid84tw_7fNfQ&s" alt="A bustling city" width="200">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiuchFXN2BogfwTpysqDAwxRid84tw_7fNfQ&s" alt="A serene lake" width="200">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiuchFXN2BogfwTpysqDAwxRid84tw_7fNfQ&s" alt="A beautiful garden" width="200">
+            </div>
+            <video controls width="400">
+              
+                Your browser does not support the video tag.
+            </video>
+            <br>
+            <iframe width="853" height="480" src="https://www.youtube.com/embed/FwNqnodc9eg" ></iframe>
+            <hr>
+        </section>
+
+        <section id="reviews">
+            <h2>Submit Your Review</h2>
+            <form action="submit_review.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="feedback">Feedback:</label><br>
+                <textarea id="feedback" name="feedback" rows="5" required></textarea><br><br>
+
+                <label for="category">Category:</label>
+                <select id="category" name="category">
+                    <option value="destinations">Destinations</option>
+                    <option value="tips">Tips</option>
+                    <option value="gallery">Gallery</option>
+                </select><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Travel Enthusiasts</p>
+        <a href="#">Return to Top</a>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+</center>
