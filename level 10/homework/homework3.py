@@ -1,0 +1,11 @@
+print(10<6)
+print(8>3)
+print(6>=6)
+print(5<=4)
+print(5!=4)
+print(9==4)
+print(4==4)
+print(10>=4)
+print(9>1)
+print(8<4)
+

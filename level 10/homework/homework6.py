@@ -1,0 +1,8 @@
+mari=int(input("ჩაწერე ასაკი"))
+luka=int(input("ჩაწერე ასაკი"))
+print(mari+luka)
+print(mari-luka)
+print(mari*luka)
+print(mari/luka)
+print(mari**luka)
+print(luka**mari)

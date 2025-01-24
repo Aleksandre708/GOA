@@ -1,0 +1,19 @@
+GOA=100
+GOA+=5
+print(GOA)
+goa=25
+goa-=5
+print(goa)
+Python=15
+Python*=2
+print(Python)
+HTML=9
+HTML/=3
+print(HTML)
+# Debugging შედგება 3 ნაწილისგან კოდის დაწერა,კოდის გაშვება და ერორების გასწორება
+GO=10
+GO+=5
+GO+=6
+GO+=2
+GO+=8
+print(GO)
