@@ -1,0 +1,21 @@
+/* Element Selector /
+h1 {
+  color: blue;
+  text-align: center;
+  font-size: 2em;
+}
+
+/ ID Selector /
+#important-text {
+  color: red;
+  font-style: italic;
+  border-bottom: 2px solid black;
+}
+
+/ Class Selector */
+.highlight-box {
+    background-color: lightyellow;
+    padding: 10px;
+    border: 1px solid orange;
+    border-radius: 5px;
+  }

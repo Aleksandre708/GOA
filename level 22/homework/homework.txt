@@ -1,0 +1,3 @@
+Slicing is a technique commonly used in programming and data analysis to extract 
+a subset of elements from an array, list, or any other sequence. It's like cutting
+ a part of a cake to enjoy a specific portion.

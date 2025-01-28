@@ -1,0 +1,8 @@
+/* ID selector /
+#myButton {
+  color: red; / ეს შეუსაბამოა, მაგრამ აქ color მნიშვნელობა იქნება წითელი /
+}
+
+/ Class selector /
+.btn {
+  color: blue; / ეს იქნება ლურჯი */

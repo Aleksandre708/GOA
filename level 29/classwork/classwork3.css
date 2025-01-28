@@ -1,0 +1,34 @@
+/* ID Selector for each paragraph */
+#paragraph-1 {
+    color: rgb(255, 255, 255); /* თეთრი */
+    background-color: black;   /* ფონზე კონტრასტისთვის */
+  }
+  
+  #paragraph-2 {
+    color: rgb(0, 0, 0); /* შავი */
+    background-color: lightgray; /* ფონზე კონტრასტისთვის */
+  }
+  
+  #paragraph-3 {
+    color: rgb(255, 0, 0); /* წითელი */
+  }
+  
+  #paragraph-4 {
+    color: rgb(0, 128, 0); /* მწვანე */
+  }
+  
+  #paragraph-5 {
+    color: rgb(0, 0, 255); /* ლურჯი */
+  }
+  
+  #paragraph-6 {
+    color: rgb(255, 255, 0); /* ყვითელი */
+  }
+  
+  #paragraph-7 {
+    color: rgb(0, 255, 255); /* ცისფერი */
+  }
+  
+  #paragraph-8 {
+    color: rgb(128, 0, 128); /* იასამნისფერი */
+  }

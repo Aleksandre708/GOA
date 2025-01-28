@@ -1,0 +1,19 @@
+.styled-div {
+    /* ფერი /
+    color: #3498db;
+
+    / ფონის ფერი /
+    background-color: #ecf0f1;
+
+    / განლაგება /
+    text-align: center;
+
+    / ტექსტის ზომა /
+    font-size: 18px;
+
+    / ტექსტის სისქე /
+    font-weight: bold;
+
+    / საზღვარი */
+    border: 3px solid #2c3e50;
+}

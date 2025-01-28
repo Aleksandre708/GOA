@@ -1,0 +1,14 @@
+/* Class Selector for buttons /
+.black-button {
+  background-color: black; / შავი ფონი /
+  color: white; / ტექსტის თეთრი ფერი, რომ კარგად გამოჩნდეს /
+  padding: 10px 20px; / ღილაკის შიგთავსის ზომები /
+  border: none; / ბორდერის ამოღება /
+  border-radius: 5px; / მომრგვალებული კუთხეები /
+  font-size: 16px; / ტექსტის ზომა /
+  cursor: pointer; / კურსორის ცვლილება მაუსზე /
+}
+
+/ Optional: დამატებითი ეფექტი ჰოვერისთვის /
+.black-button:hover {
+  background-color: gray; / ღილაკის ფონის ნაცრისფერი ფერი ჰოვერისას */

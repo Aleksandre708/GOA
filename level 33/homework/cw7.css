@@ -1,0 +1,5 @@
+.warning {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: orange; /* Optional, but adds a nice touch */
+  }

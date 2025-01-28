@@ -1,0 +1,35 @@
+/* Importing Fonts /
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap'); / Serif for headings /
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap'); / Sans-serif for body /
+
+/ Assign Fonts to Elements /
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    margin: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+    color: #2c3e50;
+    margin: 20px 0 10px;
+}
+
+/ Additional Styling for Showcase */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: white;
+    border-radius: 8px 8px 0 0;
+}

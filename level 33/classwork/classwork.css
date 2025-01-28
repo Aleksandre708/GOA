@@ -1,0 +1,20 @@
+/* styles.css /
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+
+
+/ styles.css */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans.woff2') format('woff2');
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}

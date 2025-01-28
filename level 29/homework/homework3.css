@@ -1,0 +1,20 @@
+/* ID Selector for each paragraph */
+#paragraph-1 {
+    color: rgb(255, 0, 0); /* წითელი */
+  }
+  
+  #paragraph-2 {
+    color: rgb(0, 255, 0); /* მწვანე */
+  }
+  
+  #paragraph-3 {
+    color: rgb(0, 0, 255); /* ლურჯი */
+  }
+  
+  #paragraph-4 {
+    color: rgb(255, 165, 0); /* ნარინჯისფერი */
+  }
+  
+  #paragraph-5 {
+    color: rgb(128, 0, 128); /* იასამნისფერი */
+  }

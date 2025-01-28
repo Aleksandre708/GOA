@@ -1,0 +1,19 @@
+.styled-element {
+    /* ფერი /
+    color: #ff5733;
+
+    / ფონის ფერი /
+    background-color: #f0f0f0;
+
+    / განლაგება /
+    text-align: center;
+
+    / ტექსტის ზომა /
+    font-size: 24px;
+
+    / ტექსტის სისქე /
+    font-weight: bold;
+
+    / საზღვარი */
+    border: 2px solid #000000;
+}
