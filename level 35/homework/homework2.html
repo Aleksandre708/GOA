@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Table</title>
+    <style>
+        /* Table styling */
+        table {
+            width: 60%;
+            border: 3px solid black; /* Border around the table */
+            border-collapse: collapse; /* Merge table borders */
+            text-align: center;
+        }
+
+        /* Header row styling */
+        th {
+            background-color: rgb(100, 200, 255); /* Light blue header */
+            color: black;
+            padding: 10px;
+            border: 2px solid black; /* Border around header cells */
+        }
+
+        /* Row styling */
+        tr {
+            background-color: rgb(240, 240, 240); /* Light gray row background */
+        }
+
+        /* Cell styling */
+        td {
+            border: 2px solid black; /* Border around each cell */
+            padding: 10px;
+        }
+
+        /* Alternate row color */
+        tr:nth-child(even) {
+            background-color: rgb(220, 220, 220); /* Slightly darker gray for alternate rows */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Styled Table with Borders and Background Colors</h1>
+    <table>
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+        </tr>
+        <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 3, Cell 1</td>
+            <td>Row 3, Cell 2</td>
+            <td>Row 3, Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 4, Cell 1</td>
+            <td>Row 4, Cell 2</td>
+            <td>Row 4, Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 5, Cell 1</td>
+            <td>Row 5, Cell 2</td>
+            <td>Row 5, Cell 3</td>
+        </tr>
+    </table>
+
+</body>
+</html>

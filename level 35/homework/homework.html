@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Links</title>
+    <style>
+        /* Default link style */
+        a {
+            color: rgb(0, 102, 204); /* Custom link color */
+            text-decoration: none; /* Remove underline */
+            font-weight: bold; /* Make links bold */
+            font-style: italic; /* Change font style */
+            text-transform: uppercase; /* Convert text to uppercase */
+            padding: 5px;
+            display: inline-block; /* Ensure background applies properly */
+            transition: all 0.3s ease; /* Smooth transition effect */
+        }
+
+        /* Hover effect */
+        a:hover {
+            text-decoration: underline; /* Add underline */
+            color: rgb(255, 0, 0); /* Change color on hover */
+            background-color: rgb(230, 230, 230); /* Add background color on hover */
+        }
+
+        /* Visited link style */
+        a:visited {
+            color: rgb(128, 0, 128); /* Different color for visited links */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Styled Links Example</h1>
+    <ul>
+        <li><a href="https://www.example.com" target="_blank">Example Link 1</a></li>
+        <li><a href="https://www.example2.com" target="_blank">Example Link 2</a></li>
+        <li><a href="https://www.example3.com" target="_blank">Example Link 3</a></li>
+        <li><a href="https://www.example4.com" target="_blank">Example Link 4</a></li>
+        <li><a href="https://www.example5.com" target="_blank">Example Link 5</a></li>
+    </ul>
+
+</body>
+</html>
