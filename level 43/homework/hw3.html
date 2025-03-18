@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .header {
+            background-color: #FF4500;
+            padding: 20px;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            min-height: 70vh;
+        }
+        .sidebar {
+            width: 25%;
+            padding: 20px;
+            color: white;
+        }
+        .left {
+            background-color: #1E90FF;
+        }
+        .right {
+            background-color: #228B22;
+        }
+        .main-content {
+            width: 50%;
+            background-color: #483D8B;
+            padding: 20px;
+            color: white;
+        }
+        .footer {
+            background-color: #FF1493;
+            padding: 20px;
+            color: white;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">HEADER</div>
+    <div class="container">
+        <div class="sidebar left">LEFT SIDEBAR</div>
+        <div class="main-content">MAIN CONTENT</div>
+        <div class="sidebar right">RIGHT SIDEBAR</div>
+    </div>
+    <div class="footer">FOOTER</div>
+</body>
+</html>

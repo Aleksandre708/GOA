@@ -1,0 +1,34 @@
+.container {
+    display: flex; /* Create a flex container */
+    flex-direction: row; /* Arrange items in a row */
+    justify-content: space-between; /* Distribute items evenly with space between */
+    align-items: center; /* Align items to the center */
+    flex-wrap: wrap; /* Wrap items to the next line if needed */
+  }
+  
+  .item {
+    flex: 1; /* Make all items grow equally */
+    width: 100px; /* Set a fixed width to maintain equal sizes */
+    text-align: center; /* Center text */
+  }
+  
+  .item:nth-child(2) {
+    flex: 2; /* Make one item grow twice as much */
+  }
+  
+  .container-reverse {
+    flex-direction: row-reverse; /* Reverse the order of items */
+  }
+  
+  .item-bottom {
+    align-self: flex-end; /* Align one specific item to the bottom */
+  }
+  
+  .container-centered {
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+  }
+  
+  .container-column {
+    flex-direction: column; /* Change direction to vertical */
+  }
