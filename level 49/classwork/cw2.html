@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box.active {
+            width: 20px;
+            color: white;
+            background-color: black;
+            cursor: pointer;
+            transition: font-size 1s ease, background-color 2s ease, color 2s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" onclick="toggleActive(this)">დააკლიკე</div>
+
+    <script>
+        function toggleActive(element) {
+            element.classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>

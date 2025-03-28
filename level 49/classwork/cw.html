@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ანიმაცია</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box" onclick="rotateElement(this)">დააკლიკე</div>
+
+    <script>
+        let angle = 0;
+
+        function rotateElement(element) {
+            angle += 30;
+            element.style.transform = `rotate(${angle}deg)`;
+        }
+    </script>
+
+</body>
+</html>
