@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>კამათლის სახეები</title>
+  <style>
+    body {
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      flex-direction: column;
+      font-family: sans-serif;
+    }
+
+    .dice-container {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-gap: 20px;
+    }
+
+    .dice {
+      width: 100px;
+      height: 100px;
+      background: #fff;
+      border-radius: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .dot {
+      width: 20px;
+      height: 20px;
+      background: black;
+      border-radius: 50%;
+      position: absolute;
+    }
+
+    /* პოზიციები კამათლისთვის */
+    .top-left    { top: 20px; left: 20px; }
+    .top-center  { top: 20px; left: 50%; transform: translateX(-50%); }
+    .top-right   { top: 20px; right: 20px; }
+
+    .center-left  { top: 50%; left: 20px; transform: translateY(-50%); }
+    .center       { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+    .center-right { top: 50%; right: 20px; transform: translateY(-50%); }
+
+    .bottom-left   { bottom: 20px; left: 20px; }
+    .bottom-center { bottom: 20px; left: 50%; transform: translateX(-50%); }
+    .bottom-right  { bottom: 20px; right: 20px; }
+  </style>
+</head>
+<body>
+
+<h2 style="color: white;">კამათლის ექვსივე გვერდი:</h2>
+
+<div class="dice-container">
+
+  <!-- 1 -->
+  <div class="dice">
+    <div class="dot center"></div>
+  </div>
+
+  <!-- 2 -->
+  <div class="dice">
+    <div class="dot top-left"></div>
+    <div class="dot bottom-right"></div>
+  </div>
+
+  <!-- 3 -->
+  <div class="dice">
+    <div class="dot top-left"></div>
+    <div class="dot center"></div>
+    <div class="dot bottom-right"></div>
+  </div>
+
+  <!-- 4 -->
+  <div class="dice">
+    <div class="dot top-left"></div>
+    <div class="dot top-right"></div>
+    <div class="dot bottom-left"></div>
+    <div class="dot bottom-right"></div>
+  </div>
+
+  <!-- 5 -->
+  <div class="dice">
+    <div class="dot top-left"></div>
+    <div class="dot top-right"></div>
+    <div class="dot center"></div>
+    <div class="dot bottom-left"></div>
+    <div class="dot bottom-right"></div>
+  </div>
+
+  <!-- 6 -->
+  <div class="dice">
+    <div class="dot top-left"></div>
+    <div class="dot top-right"></div>
+    <div class="dot center-left"></div>
+    <div class="dot center-right"></div>
+    <div class="dot bottom-left"></div>
+    <div class="dot bottom-right"></div>
+  </div>
+
+</div>
+
+</body>
+</html>
