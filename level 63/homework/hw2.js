@@ -1,0 +1,1 @@
+sayHelloWorld(); // Will show an alert popup

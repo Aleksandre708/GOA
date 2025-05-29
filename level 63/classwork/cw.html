@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>ტექსტის განლაგება</title>
+</head>
+<body>
+
+  <p id="my-text">დააკლიკე ტექსტზე</p>
+
+  <script>
+    function changeTextAlignmentById(id, alignment) {
+      let element = document.getElementById(id);
+      if (element) {
+        element.style.textAlign = alignment;
+      }
+    }
+
+    document.getElementById('my-text').addEventListener('click', function () {
+      changeTextAlignmentById('my-text', 'center');
+    });
+  </script>
+
+</body>
+</html>

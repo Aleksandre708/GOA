@@ -1,0 +1,1 @@
+let footerElement = document.getElementById('footer');

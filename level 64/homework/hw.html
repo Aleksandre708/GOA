@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Initial Title</title>
+</head>
+<body>
+
+  <p id="message-paragraph">ეს ტექსტი შეიცვლება.</p>
+  <button onclick="runAllPrompts()">Start Prompts</button>
+
+  <script>
+    function runAllPrompts() {
+      // 1. Prompt for favorite hobby and alert it
+      let hobby = prompt("What is your favorite hobby?");
+      alert("Your favorite hobby is: " + hobby);
+
+      // 2. Prompt for first and last name, concatenate and alert
+      let firstName = prompt("Enter your first name:");
+      let lastName = prompt("Enter your last name:");
+      let fullName = firstName + " " + lastName;
+      alert("Your full name is: " + fullName);
+
+      // 3. Prompt for a message and update <p> element
+      let userMessage = prompt("Enter a message to display on the page:");
+      let paragraph = document.getElementById("message-paragraph");
+      paragraph.textContent = userMessage;
+
+      // 4. Prompt for favorite emoji and show it with thank you
+      let emoji = prompt("What's your favorite emoji?");
+      alert("Thanks! You chose: " + emoji);
+
+      // 5. Prompt for a word and set it as the page's title
+      let titleWord = prompt("Enter a word to set as the page title:");
+      document.title = titleWord;
+    }
+  </script>
+
+</body>
+</html>
