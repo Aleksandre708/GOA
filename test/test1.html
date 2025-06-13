@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>გაქირავების სერვისი</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+      padding: 25px;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: #2c3e50;
+    }
+
+    .price {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 15px 0;
+      color: #27ae60;
+    }
+
+    .description {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background-color: #2980b9;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #1c5980;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ecf0f1;
+      color: #888;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>უძრავი ქონების გაქირავება</h1>
+    <p>საუკეთესო ფასები ბინებზე, კოტეჯებზე და ოფისებზე</p>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2>ქირავდება ბინა</h2>
+      <div class="price">₾1,200 / თვე</div>
+      <p class="description">2 ოთახიანი კომფორტული ბინა ვაკეში, თანამედროვე ავეჯითა და ტექნიკით.</p>
+      <button class="btn">დაგვიკავშირდი</button>
+    </div>
+
+    <div class="card">
+      <h2>ქირავდება ოფისი</h2>
+      <div class="price">₾2,500 / თვე</div>
+      <p class="description">100მ² საოფისე ფართი საბურთალოზე, პირველ სართულზე, ცალკე შესასვლელით.</p>
+      <button class="btn">დაგვიკავშირდი</button>
+    </div>
+
+    <div class="card">
+      <h2>ქირავდება კოტეჯი</h2>
+      <div class="price">₾350 / ღამე</div>
+      <p class="description">მყუდრო კოტეჯი გუდაურში, სამზარეულოთი, ბუხრით და ულამაზესი ხედით.</p>
+      <button class="btn">დაგვიკავშირდი</button>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 გაქირავების სერვისი. ყველა უფლება დაცულია.
+  </footer>
+
+</body>
+</html>

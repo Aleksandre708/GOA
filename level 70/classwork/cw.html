@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>userLoop ფუნქცია</title>
+</head>
+<body>
+  <h2>რიცხვების ბეჭდვა კონსოლში</h2>
+  <p>გთხოვთ, გახსენით კონსოლი (F12 ან Ctrl+Shift+I → Console), რომ ნახოთ შედეგები.</p>
+
+  <script>
+    function userLoop() {
+      // მომხმარებლიდან რიცხვების მიღება
+      const input1 = prompt("შეიყვანეთ პირველი რიცხვი:");
+      const input2 = prompt("შეიყვანეთ მეორე რიცხვი:");
+
+      // გარდაქმნა რიცხვებად
+      const num1 = Number(input1);
+      const num2 = Number(input2);
+
+      // შემოწმება, რომ ორივე რიცხვია
+      if (isNaN(num1) || isNaN(num2)) {
+        console.log("გთხოვთ, შეიყვანეთ მხოლოდ რიცხვები.");
+        return;
+      }
+
+      // დაბეჭდვა რიცხვების დიაპაზონში
+      if (num1 <= num2) {
+        for (let i = num1; i <= num2; i++) {
+          console.log(i);
+        }
+      } else {
+        for (let i = num1; i >= num2; i--) {
+          console.log(i);
+        }
+      }
+    }
+
+    // ფუნქციის გაშვება ვებსაიტის ჩატვირთვისთანავე
+    window.onload = userLoop;
+  </script>
+</body>
+</html>
