@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>ინტერვალი ფუნქციისთვის</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>ინტერვალი ფუნქციისთვის</h2>
+  <button id="stopBtn">შეჩერება</button>
+
+  <script>
+    function showName() {
+      console.log("დემიოს ბელატორ");
+    }
+
+    // ფუნქცია გამოიძახება ყოველ 10 წამში
+    const intervalId = setInterval(showName, 10000);
+
+    // ღილაკზე დაჭერით ინტერვალი შეწყდება
+    document.getElementById("stopBtn").addEventListener("click", () => {
+      clearInterval(intervalId);
+      console.log("ინტერვალი შეწყდა");
+    });
+  </script>
+
+</body>
+</html>

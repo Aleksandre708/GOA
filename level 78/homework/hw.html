@@ -1,0 +1,29 @@
+<script>// ✅ 1. Select all <p> tags and show count in alert
+const paragraphs = document.querySelectorAll("p");
+alert(`Total number of <p> tags: ${paragraphs.length}`);
+
+// ✅ 2. Change all <h2> elements' text color to blue
+const h2s = document.querySelectorAll("h2");
+h2s.forEach(h2 => {
+  h2.style.color = "blue";
+});
+
+// ✅ 3. Log all <li> elements' text content
+const listItems = document.querySelectorAll("li");
+listItems.forEach(li => {
+  console.log(li.textContent);
+});
+
+// ✅ 4. Set background color of all <div> elements to lightgray
+const divs = document.querySelectorAll("div");
+divs.forEach(div => {
+  div.style.backgroundColor = "lightgray";
+});
+
+// ✅ 5. Find first <img> and change its src
+const images = document.querySelectorAll("img");
+for (let i = 0; i < images.length; i++) {
+  images[i].src = "https://via.placeholder.com/200x150";
+  break; // პირველი რომ შეცვალოს და გაჩერდეს
+}
+</script>

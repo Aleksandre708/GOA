@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>აბიტურიენტთა ტესტირების ვებსაიტი</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>აბიტურიენტთა ტესტირება</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">მთავარი</a></li>
+                <li><a href="#quiz">ტესტები</a></li>
+                <li><a href="#about">ჩვენს შესახებ</a></li>
+                <li><a href="#contact">კონტაქტი</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>მოგესალმებით!</h2>
+        <p>ეს არის პლატფორმა, სადაც აბიტურიენტებს შეუძლიათ გაიარონ სხვადასხვა საგანში ტესტირება და გაიუმჯობესონ ცოდნა.</p>
+    </section>
+
+    <section id="quiz">
+        <h2>აირჩიე საგანი</h2>
+        <div class="subject-buttons">
+            <button onclick="loadSubject('math')">მათემატიკა</button>
+            <button onclick="loadSubject('geo')">გეოგრაფია</button>
+            <button onclick="loadSubject('history')">ისტორია</button>
+        </div>
+
+        <div id="quiz-container">
+            <p id="question">აირჩიე საგანი...</p>
+            <div id="options"></div>
+            <button id="next-btn">შემდეგი</button>
+        </div>
+        <div id="result"></div>
+    </section>
+
+    <section id="about">
+        <h2>ჩვენს შესახებ</h2>
+        <p>ჩვენ ვართ გუნდი, რომელიც ცდილობს შექმნას მარტივი და ინტუიციური ონლაინ პლატფორმა აბიტურიენტებისთვის.</p>
+    </section>
+
+    <section id="contact">
+        <h2>დაგვიკავშირდით</h2>
+        <form>
+            <label for="name">სახელი:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="message">შეტყობინება:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">გაგზავნა</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 აბიტურიენტთა ტესტირება. ყველა უფლება დაცულია.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

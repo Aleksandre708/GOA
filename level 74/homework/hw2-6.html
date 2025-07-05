@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Listener Examples</title>
+  <style>
+    #toggleDiv {
+      width: 200px;
+      height: 100px;
+      background-color: lightblue;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+
+    #toggleImage {
+      display: none;
+      width: 150px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. Click Alert -->
+  <button id="alertBtn">Click Me for Alert</button><br><br>
+
+  <!-- 2. Change Text on Hover -->
+  <p id="hoverText">Hover over this text.</p><br>
+
+  <!-- 3. Toggle Background Color -->
+  <div id="toggleDiv">Click to toggle background color</div>
+
+  <!-- 4. Log Input Value on Click -->
+  <input type="text" id="logInput" placeholder="Click me"><br><br>
+
+  <!-- 5. Show/Hide Image on Button Click -->
+  <button id="toggleImageBtn">Show/Hide Image</button><br>
+  <img id="toggleImage" src="https://via.placeholder.com/150" alt="Placeholder Image">
+
+  <script>
+    // 1. Click Alert
+    document.getElementById('alertBtn').addEventListener('click', function() {
+      alert('Button was clicked!');
+    });
+
+    // 2. Change Text on Hover
+    const hoverText = document.getElementById('hoverText');
+    hoverText.addEventListener('mouseover', function() {
+      hoverText.textContent = 'You hovered over me!';
+    });
+    hoverText.addEventListener('mouseout', function() {
+      hoverText.textContent = 'Hover over this text.';
+    });
+
+    // 3. Toggle Background Color
+    const toggleDiv = document.getElementById('toggleDiv');
+    let isBlue = true;
+    toggleDiv.addEventListener('click', function() {
+      toggleDiv.style.backgroundColor = isBlue ? 'lightgreen' : 'lightblue';
+      isBlue = !isBlue;
+    });
+
+    // 4. Log Input Value on Click
+    document.getElementById('logInput').addEventListener('click', function(event) {
+      console.log('Input value:', event.target.value);
+    });
+
+    // 5. Show/Hide Image on Button Click
+    const toggleImageBtn = document.getElementById('toggleImageBtn');
+    const toggleImage = document.getElementById('toggleImage');
+    toggleImageBtn.addEventListener('click', function() {
+      toggleImage.style.display = toggleImage.style.display === 'none' ? 'block' : 'none';
+    });
+  </script>
+
+</body>
+</html>

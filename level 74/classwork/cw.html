@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>პარაგრაფის ცენტრში განლაგება</title>
+  <style>
+    #centeredParagraph {
+      transition: all 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- პარაგრაფი ID-ით -->
+  <p id="centeredParagraph">მაუსი მომაახლოვე!</p>
+
+  <script>
+    // პარაგრაფის წამოღება ID-ით
+    const paragraph = document.getElementById('centeredParagraph');
+
+    // onmouseover event handler-ის გადაცემა
+    paragraph.onmouseover = function() {
+      // ტექსტის ცენტრში განლაგება
+      paragraph.style.textAlign = 'center';
+    };
+  </script>
+
+</body>
+</html>
