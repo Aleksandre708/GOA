@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Change Image with For Loop</title>
+</head>
+<body>
+
+  <!-- რამდენიმე სურათი -->
+  <img src="old1.jpg" alt="Old Image 1">
+  <img src="old2.jpg" alt="Old Image 2">
+  <img src="old3.jpg" alt="Old Image 3">
+
+  <script>
+    // ამოვიღოთ ყველა <img> ტეგი
+    const images = document.querySelectorAll("img");
+
+    // ვიპოვოთ პირველი <img> და შევცვალოთ src
+    for (let i = 0; i < images.length; i++) {
+      images[i].src = "https://via.placeholder.com/150"; // ახალი სურათი
+
+      // პირველივე ციკლის შემდეგ გავჩერდეთ
+      break;
+    }
+  </script>
+
+</body>
+</html>

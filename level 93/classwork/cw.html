@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Eval Math Demo</title>
+</head>
+<body>
+<script>
+// 1. უბრალო მათემატიკური გამოსახულება
+let expr1 = prompt("შეიყვანე მათემატიკური გამოსახულება (მაგ: 5+3):");
+if (expr1) {
+  alert("შედეგი: " + eval(expr1));
+}
+
+// 2. გამოსახულება ფრჩხილებით
+let expr2 = prompt("შეიყვანე გამოსახულება ფრჩხილებით (მაგ: (8+2)*3):");
+if (expr2) {
+  alert("შედეგი: " + eval(expr2));
+}
+
+// 3. გაყოფა
+let expr3 = prompt("შეიყვანე გაყოფა (მაგ: 100/4):");
+if (expr3) {
+  alert("შედეგი: " + eval(expr3));
+}
+
+// 4. კვადრატი
+let num = prompt("შეიყვანე რიცხვი კვადრატის გამოსათვლელად:");
+if (num) {
+  alert("კვადრატი: " + eval(num + "*" + num));
+}
+
+// 5. წინასწარ შენახული გამოსახულება
+let exp = "20-7";
+alert("String ცვლადის \"20-7\" შეფასება: " + eval(exp));
+</script>
+</body>
+</html>
